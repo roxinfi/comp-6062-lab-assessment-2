@@ -3,7 +3,7 @@ const app = Vue.createApp({
   data() {
     return {
       studentName: 'Vraj Patel',
-      gasLevelValue: 55,
+      gasLevelValue: 55,    
       gasLevels: [  { id: 'danger-low', color: 'danger', name: 'Danger - Low Gas Levels!', min: 0, max: 10 },  
         { id: 'warn-low', color: 'warning', name: 'Warning - Low Gas Levels', min: 11, max: 31 },  
         { id: 'safe', color: 'safe', name: 'Safe Gas Levels', min: 32, max: 70 },  
