@@ -1,0 +1,33 @@
+
+.gasLevelIndicator 
+{
+  padding: 45px;
+  margin: 25px 0;
+  text-align: center;
+}
+
+.danger 
+{
+  background-color: red;
+}
+.warning 
+{
+  background-color: yellow;
+}
+.safe 
+{
+  background-color: green;
+}
+
+.unactiveGasStatus 
+{
+  display: none;
+}
+
+footer 
+{
+  background-color: #1c72ff;
+  color: #fff;
+  padding: 25px;
+  margin-top: 40px;
+}

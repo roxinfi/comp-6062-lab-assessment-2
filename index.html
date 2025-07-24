@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>1243437</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Gas Level Monitor Interface - Vraj Patel</h1>
+        </header>
+
+        <main>
+            <div id="app">
+                <p>Current Gas Level:</p>
+                <input type="range" min=0 max=100 v-model="gasLevelValue"/>
+                <input type="number" min=0 max=100 v-model="gasLevelValue"/>
+                <div v-for="gasLevel in gasLevels" :key="gasLevel.id" :class="['gasLevelIndicator', gasLevel.color, { 'unactiveGasStatus': !activeGasLevel(gasLevel) }]">{{ gasLevel.name }}</div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Vraj Patel 1243437</p>
+        </footer>
+        <link rel="stylesheet" href="css/styles.css" />
+        <script src="https://unpkg.com/vue@3.4.31/dist/vue.global.js"></script>
+        <script src="scripts/app.js"></script>
+        
+    </body>
+
+</html>
